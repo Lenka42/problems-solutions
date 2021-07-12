@@ -44,7 +44,8 @@ class Solution:
                 return False
         return True
 
-class Solution(object):
+
+class SolutionFaster(object):
     def isValidSudoku(self, board):
         """
         :type board: List[List[str]]
