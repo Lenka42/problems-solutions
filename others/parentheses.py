@@ -1,4 +1,4 @@
-class Solution:
+class SolutionStack:
     def isValid(self, s: str) -> bool:
         parentheses = {
             '{': '}',
