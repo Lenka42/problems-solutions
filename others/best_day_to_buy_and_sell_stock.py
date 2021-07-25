@@ -25,3 +25,12 @@ class Solution:
                 min_price_before = p
         return max_profit
 
+
+class SolutionKadane:
+    def maxProfit(self, prices: List[int]) -> int:
+        max_curr = 0
+        max_so_far = 0
+        for i in range(1, len(prices)):
+            max_curr = max(0, max_curr + prices[i] - prices[i-1])
+            max_so_far = max(max_curr, max_so_far)
+        return max_so_far
