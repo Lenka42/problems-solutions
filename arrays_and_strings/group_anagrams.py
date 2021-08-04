@@ -9,5 +9,3 @@ class Solution:
             ss = ''.join(sorted(s))
             anagrams_dict[ss].append(s)
         return [list(v) for k, v in anagrams_dict.items()]
-
-
