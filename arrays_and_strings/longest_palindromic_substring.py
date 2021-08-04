@@ -20,5 +20,3 @@ class Solution:
                 max_len = r1 - l1 + 1
                 max_str = s[l1:r1+1]
         return max_str
-
-
